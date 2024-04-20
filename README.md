@@ -1,10 +1,10 @@
 # JSON-validator
 Project created for recruitment purposes
 
-## How to use
+## How to run
 To validate a file JSON use a script as below
 
-~python <path>/JsonValid.py <path/to/json/file>
+~<path>/JsonValid.py <path/to/json/file>
 
 ## Additional information
 The script is not fully "idiot-proof"
@@ -20,7 +20,7 @@ This causes a lot of complications, which can be seen in the attached file "test
 
 regular expression functions need to be improved for this case.
 You can still use regex option if you add flag "--regex" as next argument in cmd.
-For example: ~python /JsonValid.py <path/to/json/file> --regex
+For example: ~<path>/JsonValid.py <path/to/json/file> --regex
 
 ## Tests
 You can run JsonValidTest.py to test all files testdata[0-4].json correct results are embedded inside the interpreted file.
