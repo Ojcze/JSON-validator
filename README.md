@@ -15,8 +15,13 @@ The script is not fully "idiot-proof"
 The JSON validator via object checking is the default.
 This is due to one unhandled case yet (I'm not sure if it's even possible)
 
--The "Resource" field contains a list, but one of the list items is "*"-
+-The "Resource" field contains a list, but one of the list items is "*".
+This causes a lot of complications, which can be seen in the attached file "testdata000.json".
 
 regular expression functions need to be improved for this case.
 You can still use regex option if you add flag "--regex" as next argument in cmd.
 For example: ~python /JsonValid.py <path/to/json/file> --regex
+
+## Tests
+You can run JsonValidTest.py to test all files testdata[0-4].json correct results are embedded inside the interpreted file.
+
